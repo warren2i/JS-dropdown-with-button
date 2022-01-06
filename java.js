@@ -1,13 +1,12 @@
-			function GetSelectedValue(){
-				var e = document.getElementById("country");
+
+function GetSelectedValue(){
+				var e = document.getElementById("command-select");
 				var result = e.options[e.selectedIndex].value;
-				
-				document.getElementById("result").innerHTML = result;
 			}
 
 			function GetSelectedText(){
-				var e = document.getElementById("country");
+				var e = document.getElementById("command-select");
 				var result = e.options[e.selectedIndex].text;
 				alert(result);
-				document.getElementById("result").innerHTML = result;
+
 			}
