@@ -1,3 +1,7 @@
+<!-- 
+  Bootstrap docs: https://getbootstrap.com/docs
+-->
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,24 +10,19 @@
 
 	<body>
 
-
-
-		<p id="result">United State</p>
-		
-		<select id="country">
-			<option value="None">-- Select --</option>
-			<option value="ID001">China</option>
-			<option value="ID002" selected>United States</option>
-			<option value="ID003">Malaysia</option>
-		</select>
-
-
-
-		<br/>
-		<br/>
-		<button type="button" onclick="GetSelectedValue()">Get Selected Value</button>
-
-		<button type="button" onclick="GetSelectedText()">Get Selected Text</button>
+    
+    <div class="input-group">
+  <select class="form-select" id="command-select" aria-label="Example select with button addon">
+            <option value="0">Select Command</option>
+            <option value="schedprocess">schedprocess</option>
+            <option value="ping">Ping</option>
+            <option value="setdate">Change Windows Date</option>
+            <option value="4">Move File</option>
+  </select>
+  <button class="btn btn-outline-secondary"  type="button" onclick="GetSelectedText()">Button</button>
+</div>
+    
+    
 	</body>
 
 </html>
